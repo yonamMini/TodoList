@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.todo.repository.TodoMapper">
+
+    <select id="findAll" resultType="com.example.todo.model.Todo">
+        SELECT id, title, completed, created_at
+        FROM todos
+    </select>
+
+    <insert id="insert" parameterType="com.example.todo.model.Todo">
+        INSERT INTO todos (title, completed, created_at)
+        VALUES (#{title}, #{completed}, NOW())
+    </insert>
+
+    <update id="toggle" parameterType="long">
+        UPDATE todos
+        SET completed = NOT completed
+        WHERE id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="long">
+        DELETE FROM todos WHERE id = #{id}
+    </delete>
+
+</mapper>
