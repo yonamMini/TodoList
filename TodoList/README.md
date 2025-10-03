@@ -9,9 +9,9 @@ Todo App (React + TypeScript)
 에러 처리 – 잘못된 요청이나 서버 오류 시 에러 메시지 출력
 알림 표시 – 등록 성공 시 "등록 완료!" 알림
 
-사용 기술 (Tech Stack)
-React (프론트엔드 UI)
-TypeScript (정적 타입, 코드 안정성 확보)
-Axios (API 통신)
-CSS (app.css, index.css) (UI 스타일링)
+사용 기술 (Tech Stack)<br>
+React (프론트엔드 UI)<br>
+TypeScript (정적 타입, 코드 안정성 확보)<br>
+Axios (API 통신)<br>
+CSS (app.css, index.css) (UI 스타일링)<br>
 Vite (빠른 빌드 및 개발 서버)
